@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #eef3f8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+        .personalizacao{
+            line-height:initial;
+        }
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            max-width: 1150px;
+            width: 100%;
+        }
+        .cartoes {
+            background: #ffffff;
+            border-radius: 30px;
+            padding: 1.8rem 1.5rem 1.8rem;
+            box-shadow: 0 18px 30px -10px rgba(0, 20, 30, 0.15),
+                        0 6px 12px -4px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+         .cartoes:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 28px 40px -14px rgba(0, 30, 50, 0.25);
+        }
+        .cartoes .icone-seguranca {
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
+        .cartoes .icone-TV {
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
+         .cartoes .icone-cloud {
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
+         .cartoes .icone-gamer {
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
+        .cartoes h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0a2533;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.15rem;
+        }
+        .cartoes .descricao {
+            color: #1e3e52;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            flex: 1;
+        }
+
+        .cartoes .reais.seguranca span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #2d5b78;
+            border-top: 1px solid #e6edf3;
+            padding-top: 0.9rem;
+            margin-top: 0.2rem;
+        }
+        .cartao-rodape {
+            border-left: 8px solid #356f9e;
+            background: linear-gradient(145deg, #ffffff 0%, #eff5fe 100%);
+        }
+        .armazenamento-cloud {
+            background: #d3e4fa;
+            color: #1e5080;
+            border-color: #aac3e2;
+        }
+        .gamer-pass {
+            background: #fce9d6;
+            color: #a35117;
+            border-color: #f3cdb2;
+        }
+        @media (max-width: 640px) {
+            .personalizacao h1 { font-size: 1.8rem; }
+            .cartoes { gap: 1.5rem; }
+        }
+         .relogio-rodape {
+            border-left: 8px solid #356f9e;
+            background: linear-gradient(145deg, #ffffff 0%, #eff5fe 100%);
+        }
+         .mudar-plano-rodape {
+            border-left: 8px solid #356f9e;
+            background: linear-gradient(145deg, #ffffff 0%, #eff5fe 100%);
+        }
+         .internet5G-rodape {
+            border-left: 8px solid #356f9e;
+            background: linear-gradient(145deg, #ffffff 0%, #eff5fe 100%);
+        }
+         .pacote-rodape {
+            border-left: 8px solid #356f9e;
+            background: linear-gradient(145deg, #ffffff 0%, #eff5fe 100%);
+        }
+         .antena-rodape {
+            border-left: 8px solid #356f9e;
+            background: linear-gradient(145deg, #ffffff 0%, #eff5fe 100%);
+        }
+        #menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        #menu a {
+            text-decoration: none;
+            color: #333;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+        #menu a:hover{
+            background-color: #d3b349;
+            color: #0066cc; 
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+ .navbar {
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+.logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #000000;
+        }
+.logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #1a4cff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+.nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+.nav-links a {
+            text-decoration: none;
+            color: #3a3a4a;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+.nav-links a:hover {
+            color: #1a4cff;
+        }
+.btn-outline {
+            display: inline-block;
+            background: transparent;
+            color: #1a4cff;
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 60px;
+            text-decoration: none;
+            border: 2px solid #1a4cff;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+.btn-outline:hover {
+            background: #1a4cff;
+            color: #fff;
+        }
+.saber-mais{
+    display: inline-block;
+            background: transparent;
+            color: #1a4cff;
+            font-weight: 600;
+            padding: 2px 22px;
+            border-radius: 40px;
+            text-decoration: none;
+            border: 2px solid #1a4cff;
+            transition: background 0.2s ease, color 0.2s ease;
+}
+.sac{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}   

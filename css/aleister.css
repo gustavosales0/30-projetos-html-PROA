@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grade-cartoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            max-width: 1150px;
+            width: 100%;
+        }
+        .cartao {
+            background: #ffffff;
+            border-radius: 30px;
+            padding: 1.8rem 1.5rem 1.8rem;
+            box-shadow: 0 18px 30px -10px rgba(0, 20, 30, 0.15),
+                        0 6px 12px -4px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+         .cartao:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 28px 40px -14px rgba(0, 30, 50, 0.25);
+        }
+        .cartao .icone-curso {
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
+
+        .cartao h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0a2533;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.15rem;
+        }
+
+        .cartao .etiqueta-curso {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            background: #eef4f8;
+            color: #1b4b66;
+            align-self: flex-start;
+            margin: 0.3rem 0 0.8rem 0;
+            border: 1px solid #d1e0eb;
+        }
+
+        .cartao .descricao {
+            color: #1e3e52;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            flex: 1;
+        }
+
+        .cartao .rodape-cartao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #2d5b78;
+            border-top: 1px solid #e6edf3;
+            padding-top: 0.9rem;
+            margin-top: 0.2rem;
+        }
+
+        .cartao .rodape-cartao span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .ico-relogio::before { content: "⏱️ "; font-size: 0.9rem; }
+        .ico-local::before { content: "📍 "; font-size: 0.9rem; }
+        .ico-globo::before { content: "🌐 "; font-size: 0.9rem; }
+        .cartao.presencial {
+            border-left: 8px solid #1f7a5c;
+            background: linear-gradient(145deg, #ffffff 0%, #f2faf7 100%);
+        }
+        .cartao.presencial .etiqueta-curso {
+            background: #d4eee5;
+            color: #ffaa01;
+            border-color: #9acfc0;
+        }
+        .cartao.presencial .rodape-cartao {
+            color: #ffaa01;
+        }
+        .cartao.presencial .selo-modalidade {
+            background: #c6e4d9;
+            color: #ffaa01;
+            border-color: #9acfc0;
+        }
+        .cartao.frontend .etiqueta-curso {
+            background: #fce9d6;
+            color: #a35117;
+            border-color: #f3cdb2;
+        }
+        .cartao.backend .etiqueta-curso {
+            background: #d6e4f7;
+            color: #ffaa01;
+            border-color: #b6ceec;
+        }
+        .cartao.dados .etiqueta-curso {
+            background: #e2ddf5;
+            color: #ffaa01;
+            border-color: #c8bfe6;
+        }
+        .cartao .selo-modalidade {
+            position: absolute;
+            top: 1rem;
+            right: 1.2rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            padding: 0.2rem 0.9rem;
+            border-radius: 40px;
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: #1b3f55;
+            backdrop-filter: blur(2px);
+        }
+        .legenda-classes {
+            margin-top: 3rem;
+            font-size: 0.82rem;
+            color: #1d4b66;
+            background: rgba(255, 255, 255, 0.55);
+            padding: 0.7rem 2rem;
+            border-radius: 80px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            max-width: 90%;
+        }
+        .legenda-classes .tag-presencial {
+            background: #c6e4d9;
+            padding: 0.1rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        @media (max-width: 640px) {
+            .cabecalho h1 { font-size: 1.8rem; }
+            .grade-cartoes { gap: 1.5rem; }
+            .legenda-classes { font-size: 0.7rem; padding: 0.5rem 1rem; }
+        }
+        #Cenario-thelema,h3{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        .borda{
+            border: 2px solid purple;
+        }
+        .back-color{
+            background-color: blue;
+            color: #000000;
+        }
+        .repeticao{
+            background-repeat: round ;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            display: block; /*Remove espaçamentos indesejados abaixo da imagem*/
+        }
+        .capa-site{
+            height: 100vh;
+            background-image: url('produtividade.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+        }
+        .capa-site:before{
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(200, 110, 0);
+            z-index: 1;
+        }
+        .conteudo-capa{
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        .capa-site h1{
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .capa-site p{
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .btn-acao{
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-acao:hover{
+            background-color: #0056b3;
+        }
+        .card{
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12x rgba(0, 20, 30, 0.15);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        .card img{
+            width: 100%;
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+        }
+        .conteudo-shingeki{
+                   padding: 20px;
+        }
+        .conteudo-shingeki h2{
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .conteudo shingeki p{
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .btn-card{
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px
+        }
+        .btn-card:hover{
+            background-color: #0056b3;
+        }
+        .card-segundo{
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12x rgba(0, 20, 30, 0.15);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .conteudo-kimetsu{
+                   padding: 20px;
+        }
+        .conteudo-kimetsu h2{
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .conteudo kimetsu p{
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .btn-card-segundo{
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px
+        }
+        .btn-card-segundo:hover{
+            background-color: #0056b3;
+        }
+        .card-terceiro{
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12x rgba(0, 20, 30, 0.15);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .conteudo-naruto{
+                   padding: 20px;
+        }
+        .conteudo-naruto h2{
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .conteudo naruto p{
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .btn-card-terceiro{
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px
+        }
+        .btn-card-terceiro:hover{
+            background-color: #0056b3;
+        }

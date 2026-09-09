@@ -1,0 +1,86 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            height: 100%;
+        }
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+ .navbar {
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+.logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #000000;
+        }
+.logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #1a4cff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+.nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+.nav-links a {
+            text-decoration: none;
+            color: #3a3a4a;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+.nav-links a:hover {
+            color: #1a4cff;
+        }
+.btn-outline {
+            display: inline-block;
+            background: transparent;
+            color: #1a4cff;
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 60px;
+            text-decoration: none;
+            border: 2px solid #1a4cff;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+.btn-outline:hover {
+            background: #1a4cff;
+            color: #fff;
+          }
+.sac{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1600px;
+
+}
+p{
+    margin-bottom: 10px;
+}

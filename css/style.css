@@ -1,0 +1,312 @@
+tittle {
+    font-family: 'Times New Roman', Times, serif;
+} 
+img {
+    width: 400; height: 600;
+}
+.khan-academy {
+    width: 400; height: 600;
+}
+.Yoda{
+    width: 100; height: 200;
+}
+.gustavo{
+    width: 100; height: 200;
+}
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#proaa{
+    width: 500px; height: 500;
+}
+.programma{
+    width: 1000px; height: 500px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #eef3f8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .cabecalho {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .cabecalho h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #0a2533;
+            letter-spacing: -0.5px;
+        }
+
+        .cabecalho p {
+            color: #1f4b66;
+            font-size: 1.05rem;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 0.3rem 1.8rem;
+            border-radius: 40px;
+            display: inline-block;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .cabecalho p code {
+            background: #d4e2ed;
+            padding: 0.1rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        .grade-cartoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            max-width: 1150px;
+            width: 100%;
+        }
+        .cartao {
+            background: #ffffff;
+            border-radius: 30px;
+            padding: 1.8rem 1.5rem 1.8rem;
+            box-shadow: 0 18px 30px -10px rgba(0, 20, 30, 0.15),
+                        0 6px 12px -4px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+         .cartao:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 28px 40px -14px rgba(0, 30, 50, 0.25);
+        }
+        .cartao .icone-curso {
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
+
+        .cartao h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0a2533;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.15rem;
+        }
+
+        .cartao .etiqueta-curso {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            background: #eef4f8;
+            color: #1b4b66;
+            align-self: flex-start;
+            margin: 0.3rem 0 0.8rem 0;
+            border: 1px solid #d1e0eb;
+        }
+
+        .cartao .descricao {
+            color: #1e3e52;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            flex: 1;
+        }
+
+        .cartao .rodape-curso {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #2d5b78;
+            border-top: 1px solid #e6edf3;
+            padding-top: 0.9rem;
+            margin-top: 0.2rem;
+        }
+
+        .cartao .rodape-curso span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .ico-relogio::before { content: "⏱️ "; font-size: 0.9rem; }
+        .ico-local::before { content: "📍 "; font-size: 0.9rem; }
+        .ico-globo::before { content: "🌐 "; font-size: 0.9rem; }
+        .cartao.presencial {
+            border-left: 8px solid #1f7a5c;
+            background: linear-gradient(145deg, #ffffff 0%, #f2faf7 100%);
+        }
+        .cartao.presencial .etiqueta-curso {
+            background: #d4eee5;
+            color: #0d5a46;
+            border-color: #9acfc0;
+        }
+        .cartao.presencial .rodape-curso {
+            color: #1f6b58;
+        }
+        .cartao.presencial .selo-modalidade {
+            background: #c6e4d9;
+            color: #0b4f3e;
+            border-color: #9acfc0;
+        }
+        .cartao.online {
+            border-left: 8px solid #356f9e;
+            background: linear-gradient(145deg, #ffffff 0%, #eff5fe 100%);
+        }
+        .cartao.online .etiqueta-curso {
+            background: #d3e4fa;
+            color: #1e5080;
+            border-color: #aac3e2;
+        }
+        .cartao.online .rodape-curso {
+            color: #2a5c87;
+        }
+        .cartao.online .selo-modalidade {
+            background: #c7dbf5;
+            color: #1a4872;
+            border-color: #aac3e2;
+        }
+        .cartao.frontend .etiqueta-curso {
+            background: #fce9d6;
+            color: #a35117;
+            border-color: #f3cdb2;
+        }
+        .cartao.backend .etiqueta-curso {
+            background: #d6e4f7;
+            color: #254f7a;
+            border-color: #b6ceec;
+        }
+        .cartao.dados .etiqueta-curso {
+            background: #e2ddf5;
+            color: #4a3b7a;
+            border-color: #c8bfe6;
+        }
+        .cartao.devops .etiqueta-curso {
+            background: #f5e0d9;
+            color: #964b2e;
+            border-color: #eac7b9;
+        }
+        .cartao.ia .etiqueta-curso {
+            background: #dff0f0;
+            color: #1f6d6d;
+            border-color: #b8dbdb;
+        }
+        .cartao.ciberseguranca .etiqueta-curso {
+            background: #f0e0e0;
+            color: #7a3b3b;
+            border-color: #e0c2c2;
+        }
+        .cartao .selo-modalidade {
+            position: absolute;
+            top: 1rem;
+            right: 1.2rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            padding: 0.2rem 0.9rem;
+            border-radius: 40px;
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: #1b3f55;
+            backdrop-filter: blur(2px);
+        }
+        .legenda-classes {
+            margin-top: 3rem;
+            font-size: 0.82rem;
+            color: #1d4b66;
+            background: rgba(255, 255, 255, 0.55);
+            padding: 0.7rem 2rem;
+            border-radius: 80px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            max-width: 90%;
+        }
+        .legenda-classes code {
+            background: #dde9f3;
+            padding: 0.1rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+
+        .legenda-classes .tag-presencial {
+            background: #c6e4d9;
+            padding: 0.1rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+
+        .legenda-classes .tag-online {
+            background: #c7dbf5;
+            padding: 0.1rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        @media (max-width: 640px) {
+            .cabecalho h1 { font-size: 1.8rem; }
+            .grade-cartoes { gap: 1.5rem; }
+            .legenda-classes { font-size: 0.7rem; padding: 0.5rem 1rem; }
+        }
+        #menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        #menu a {
+            text-decoration: none;
+            color: #333;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+        #menu a:hover{
+            background-color: #d3b349;
+            color: #0066cc; 
+            border-radius: 4px;
+        }
+/*Centralização de texto*/ *{
+            text-align: center;
+/*Cor de fundo da página*/       }
+        body {
+            background-color: lightblue;
+        }
+        h1{
+            color: yellow;
+        }
+        h2{
+            color: navy;
+/*padding:preenchimento*/ }
+/*margin:Crias espaço em torno do elemento*/  #forca{
+            padding: 20px;
+            margin: 10px;
+        }
+        #rodape{
+            border-style: hidden;
+        }
+        #jaja{
+            border: 2px solid tomato;
+        }
+        .tag{
+            border-left: 2px solid red;
+        }
+/*seletor{propriedade:} É a estrutura básica de uma página css*/

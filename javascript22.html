@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Sales">
+    <meta name="keywords" content="página, Html, programação">
+    <meta name="description" content="Página de desenvolvimento html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="generator" content="Visual Studio Code">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript e html</title>
+    <style>
+        #mudanca-de-cor{
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Clique aqui</strong></h1>
+    <p id="mudanca-de-cor">A interatividade na internet é a capacidade que o usúario tem de participar, modificar e responder ativamente aos conteúdos digitais, em vez de apenas consumi-los passivamente.</p>
+    <button onclick="alternarImagem()">Mostrar / Esconder</button>
+    <br><br>
+    <img id="imagem" src="img/interativi.jpg" alt="interatividade" style="display: block;">
+    <script>
+    function alternarImagem(){
+        var img = document.getElementById("imagem");
+        if(img.style.display === "none"){
+            img.style.display = "block";
+        } else {
+            img.style.display = "none";
+        }
+    }
+    </script>
+    <h2>Principais formas de interatividade</h2>
+    <ul>
+        <li><b>Redes sociais:</b> Onde o público comenta em tempo real, cria comunidades e conversa com marcas ou produtores.</li>
+        <li><b>Transmissões ao vivo (Lives)</b> Onde o chat permite que a audiência envie perguntas respondidas na mesma hora pelo apresentador.</li>
+        <li><b>Plataformas de streaming e TV conectada:</b> Onde é possível acessar conteúdos extras, votar em enquetes ou abrir aplicativos direto na tela.</li>
+    </ul>
+    <hr>
+    <footer>
+        <p>&copy; 2026 GustavoSales.Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
